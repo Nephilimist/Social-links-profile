@@ -15,7 +15,7 @@
   padding: 0;
 }
 
-body {
+main {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -46,7 +46,7 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
+    main {
         padding: 24px;
     }
 
@@ -101,7 +101,18 @@ body {
 }
 
 footer {
-  margin-top: 50px;
+  padding-top: 50px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color: var(--white);
+  background-color: var(--off-black);
+  font-size: 14px;
+  line-height: 150%;
+  display: flex;
+  justify-content: center;
 }
 
 footer a {
