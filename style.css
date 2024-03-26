@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@400&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@600&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Outfit:wght@700&family=Young+Serif&display=swap");
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color: var(--white);
+  background-color: var(--off-black);
+  font-size: 14px;
+  line-height: 150%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: var(--dark-grey);
+  padding: 40px;
+  border-radius: 12px;
+  width: 384px;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 24px;
+    }
+
+  .container {
+    max-width: 327px;
+    padding: 24px;
+  }
+}
+
+.container img {
+  max-width: 88px;
+  border-radius: 100%;
+}
+
+.container h1 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.container h2 {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.container .buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.container .buttons button {
+  border-radius: 8px;
+  background-color: var(--grey);
+  font-weight: 700;
+  color: var(--white);
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.container .buttons button:active {
+  background-color: var(--green);
+  color: var(--grey);
+}
+
+footer {
+  margin-top: 50px;
+}
+
+footer a {
+  color: var(--green);
+}
